@@ -1,0 +1,13 @@
+C:\Users\SeongMun\AppData\Local\Temp\CloudCodeReference\module-compilation\Project.dll
+C:\Users\SeongMun\AppData\Local\Temp\CloudCodeReference\module-compilation\Project.deps.json
+C:\Users\SeongMun\AppData\Local\Temp\CloudCodeReference\module-compilation\Project.pdb
+C:\Users\SeongMun\AppData\Local\Temp\CloudCodeReference\module-compilation\Unity.Services.CloudCode.Apis.dll
+C:\Users\SeongMun\AppData\Local\Temp\CloudCodeReference\module-compilation\Unity.Services.CloudCode.Core.dll
+C:\Users\SeongMun\AppData\Local\Temp\CloudCodeReference\module-compilation\Google.Protobuf.dll
+C:\Users\SeongMun\AppData\Local\Temp\CloudCodeReference\module-compilation\Grpc.Core.Api.dll
+C:\Users\SeongMun\AppData\Local\Temp\CloudCodeReference\module-compilation\Grpc.Net.Client.dll
+C:\Users\SeongMun\AppData\Local\Temp\CloudCodeReference\module-compilation\Grpc.Net.Common.dll
+C:\Users\SeongMun\AppData\Local\Temp\CloudCodeReference\module-compilation\JsonSubTypes.dll
+C:\Users\SeongMun\AppData\Local\Temp\CloudCodeReference\module-compilation\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\SeongMun\AppData\Local\Temp\CloudCodeReference\module-compilation\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\SeongMun\AppData\Local\Temp\CloudCodeReference\module-compilation\Newtonsoft.Json.dll

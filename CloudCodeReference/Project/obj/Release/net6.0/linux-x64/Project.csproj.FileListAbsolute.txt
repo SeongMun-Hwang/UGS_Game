@@ -1,0 +1,13 @@
+C:\Users\SeongMun\Desktop\UGS_Game\CloudCodeReference\Project\bin\Release\net6.0\linux-x64\Project.deps.json
+C:\Users\SeongMun\Desktop\UGS_Game\CloudCodeReference\Project\bin\Release\net6.0\linux-x64\Project.dll
+C:\Users\SeongMun\Desktop\UGS_Game\CloudCodeReference\Project\bin\Release\net6.0\linux-x64\Project.pdb
+C:\Users\SeongMun\Desktop\UGS_Game\CloudCodeReference\Project\obj\Release\net6.0\linux-x64\Project.csproj.AssemblyReference.cache
+C:\Users\SeongMun\Desktop\UGS_Game\CloudCodeReference\Project\obj\Release\net6.0\linux-x64\Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SeongMun\Desktop\UGS_Game\CloudCodeReference\Project\obj\Release\net6.0\linux-x64\Project.AssemblyInfoInputs.cache
+C:\Users\SeongMun\Desktop\UGS_Game\CloudCodeReference\Project\obj\Release\net6.0\linux-x64\Project.AssemblyInfo.cs
+C:\Users\SeongMun\Desktop\UGS_Game\CloudCodeReference\Project\obj\Release\net6.0\linux-x64\Project.csproj.CoreCompileInputs.cache
+C:\Users\SeongMun\Desktop\UGS_Game\CloudCodeReference\Project\obj\Release\net6.0\linux-x64\Project.sourcelink.json
+C:\Users\SeongMun\Desktop\UGS_Game\CloudCodeReference\Project\obj\Release\net6.0\linux-x64\Project.dll
+C:\Users\SeongMun\Desktop\UGS_Game\CloudCodeReference\Project\obj\Release\net6.0\linux-x64\refint\Project.dll
+C:\Users\SeongMun\Desktop\UGS_Game\CloudCodeReference\Project\obj\Release\net6.0\linux-x64\Project.pdb
+C:\Users\SeongMun\Desktop\UGS_Game\CloudCodeReference\Project\obj\Release\net6.0\linux-x64\ref\Project.dll

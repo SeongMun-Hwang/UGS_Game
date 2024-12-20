@@ -1,0 +1,13 @@
+C:\Users\SeongMun\Desktop\UGS_Game\CloudCodeReference\Project\bin\Release\net6.0\any\Project.deps.json
+C:\Users\SeongMun\Desktop\UGS_Game\CloudCodeReference\Project\bin\Release\net6.0\any\Project.dll
+C:\Users\SeongMun\Desktop\UGS_Game\CloudCodeReference\Project\bin\Release\net6.0\any\Project.pdb
+C:\Users\SeongMun\Desktop\UGS_Game\CloudCodeReference\Project\obj\Release\net6.0\any\Project.csproj.AssemblyReference.cache
+C:\Users\SeongMun\Desktop\UGS_Game\CloudCodeReference\Project\obj\Release\net6.0\any\Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SeongMun\Desktop\UGS_Game\CloudCodeReference\Project\obj\Release\net6.0\any\Project.AssemblyInfoInputs.cache
+C:\Users\SeongMun\Desktop\UGS_Game\CloudCodeReference\Project\obj\Release\net6.0\any\Project.AssemblyInfo.cs
+C:\Users\SeongMun\Desktop\UGS_Game\CloudCodeReference\Project\obj\Release\net6.0\any\Project.csproj.CoreCompileInputs.cache
+C:\Users\SeongMun\Desktop\UGS_Game\CloudCodeReference\Project\obj\Release\net6.0\any\Project.sourcelink.json
+C:\Users\SeongMun\Desktop\UGS_Game\CloudCodeReference\Project\obj\Release\net6.0\any\Project.dll
+C:\Users\SeongMun\Desktop\UGS_Game\CloudCodeReference\Project\obj\Release\net6.0\any\refint\Project.dll
+C:\Users\SeongMun\Desktop\UGS_Game\CloudCodeReference\Project\obj\Release\net6.0\any\Project.pdb
+C:\Users\SeongMun\Desktop\UGS_Game\CloudCodeReference\Project\obj\Release\net6.0\any\ref\Project.dll
