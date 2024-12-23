@@ -16,6 +16,7 @@ using UnityEngine.SocialPlatforms;
 using Newtonsoft.Json;
 using Unity.Services.CloudCode;
 using Unity.Services.CloudCode.GeneratedBindings;
+using UnityEngine.SceneManagement;
 
 public class UGSManager : MonoBehaviour
 {
@@ -33,7 +34,10 @@ public class UGSManager : MonoBehaviour
     async void Start()
     {
         await UnityServices.InitializeAsync();
-
+        if (AuthenticationService.Instance.IsSignedIn)
+        {
+            await AuthenticationService.Instance.SignInAnonymouslyAsync();
+        }
         //SignInAnonymouslyAsync() - 계정을 따로 안 만들고 로그인. 흔히 아는 게스트 로그인
         await AuthenticationService.Instance.SignInAnonymouslyAsync();
 
@@ -189,8 +193,10 @@ public class UGSManager : MonoBehaviour
     {
         try
         {
+            //var module = new ProjectBindings(CloudCodeService.Instance);
+            //var result = await module.SayHello("World"); 
             var module = new ProjectBindings(CloudCodeService.Instance);
-            var result = await module.SayHello("World");
+            var result = await module.GetGacha();
 
             Debug.Log("Cloud code result : " + result);
         }
@@ -198,5 +204,9 @@ public class UGSManager : MonoBehaviour
         {
             Debug.Log(e);
         }
+    }
+    public void MoveToGachaScene()
+    {
+        SceneManager.LoadScene("GachaScene");
     }
 }
