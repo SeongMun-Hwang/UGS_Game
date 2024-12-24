@@ -36,25 +36,25 @@ namespace Project
         public async Task<string> DoGacha(IExecutionContext context)
         {
             var result = await apiClient.RemoteConfigSettings.AssignSettingsGetAsync(
-                context, context.AccessToken, 
-                context.ProjectId, 
-                context.EnvironmentId, 
+                context, context.AccessToken,
+                context.ProjectId,
+                context.EnvironmentId,
                 null,
                 new List<string> { "GachaProbabilityTable" });
 
             List<GachaItem> items = JsonConvert.DeserializeObject<List<GachaItem>>(result.Data.Configs.Settings["GachaProbabilityTable"].ToString());
 
-            int totalFactor=items.Sum(item=>item.Factor);
+            int totalFactor = items.Sum(item => item.Factor);
             string selectedName = "";
             Random random = new Random();
             int randomValue = random.Next(totalFactor);
             int countWeight = 0;
 
 
-            foreach(GachaItem item in items)
+            foreach (GachaItem item in items)
             {
-                countWeight+= item.Factor;
-                if(randomValue < countWeight)
+                countWeight += item.Factor;
+                if (randomValue < countWeight)
                 {
                     selectedName = item.Name;
                     break;
@@ -63,10 +63,10 @@ namespace Project
             var charcaterSaved = await apiClient.CloudSaveData.GetItemsAsync(
                 context, context.AccessToken, context.ProjectId, context.PlayerId, new List<string>
                 {
-                    "CharacterOwned"
+                    "Character"
                 });
-            List<CharacterOwned> characters=new List<CharacterOwned>();
-            if(charcaterSaved.Data.Results.Count == 0)
+            List<CharacterOwned> characters = new List<CharacterOwned>();
+            if (charcaterSaved.Data.Results.Count == 0)
             {
                 characters.Add(new CharacterOwned
                 {
@@ -76,24 +76,22 @@ namespace Project
             }
             else
             {
+                var savedData = charcaterSaved.Data.Results.FirstOrDefault(item => item.Key == "Character");
+                if (savedData != null)
                 {
-                    var savedData = charcaterSaved.Data.Results.FirstOrDefault(item => item.Key == "CharacterOwned");
-                    if(savedData != null)
+                    characters = JsonConvert.DeserializeObject<List<CharacterOwned>>(savedData.Value.ToString());
+                    var exisitingCharacter = characters.FirstOrDefault(c => c.Name == selectedName);
+                    if (exisitingCharacter != null)
                     {
-                        characters = JsonConvert.DeserializeObject<List<CharacterOwned>>(savedData.Value.ToString());
-                        var exisitingCharacter=characters.FirstOrDefault(c=>c.Name==selectedName);
-                        if(exisitingCharacter != null)
+                        exisitingCharacter.Level += 1;
+                    }
+                    else
+                    {
+                        characters.Add(new CharacterOwned
                         {
-                            exisitingCharacter.Level += 1;
-                        }
-                        else
-                        {
-                            characters.Add(new CharacterOwned
-                            {
-                                Name = selectedName,
-                                Level = 1,
-                            });
-                        }
+                            Name = selectedName,
+                            Level = 1,
+                        });
                     }
                 }
             }

@@ -33,5 +33,26 @@ namespace Unity.Services.CloudCode.GeneratedBindings
                 {
                 });
         }
+
+        public async Task RegisterDeck()
+        {
+            await k_Service.CallModuleEndpointAsync(
+                "Project",
+                "RegisterDeck",
+                new Dictionary<string, object>()
+                {
+                });
+        }
+
+        public async Task Battle(string opponentPlayer)
+        {
+            await k_Service.CallModuleEndpointAsync(
+                "Project",
+                "Battle",
+                new Dictionary<string, object>()
+                {
+                    {"opponentPlayer", opponentPlayer},
+                });
+        }
     }
 }

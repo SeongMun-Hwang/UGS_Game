@@ -18,12 +18,11 @@ public class GachaManager : MonoBehaviour
     async void Start()
     {
         await UnityServices.InitializeAsync();
-        if (AuthenticationService.Instance.IsSignedIn)
+        if (!AuthenticationService.Instance.IsSignedIn)
         {
             await AuthenticationService.Instance.SignInAnonymouslyAsync();
         }
         //SignInAnonymouslyAsync() - 계정을 따로 안 만들고 로그인. 흔히 아는 게스트 로그인
-        await AuthenticationService.Instance.SignInAnonymouslyAsync();
     }
 
     void Update()

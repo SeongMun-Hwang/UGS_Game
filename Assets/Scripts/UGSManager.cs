@@ -34,18 +34,17 @@ public class UGSManager : MonoBehaviour
     async void Start()
     {
         await UnityServices.InitializeAsync();
-        if (AuthenticationService.Instance.IsSignedIn)
+        if (!AuthenticationService.Instance.IsSignedIn)
         {
             await AuthenticationService.Instance.SignInAnonymouslyAsync();
         }
         //SignInAnonymouslyAsync() - 계정을 따로 안 만들고 로그인. 흔히 아는 게스트 로그인
-        await AuthenticationService.Instance.SignInAnonymouslyAsync();
 
         if (AuthenticationService.Instance.IsSignedIn) //로그인 됐으면
         {
             userIdText.text = "Player ID : " + AuthenticationService.Instance.PlayerId;
 
-            await AuthenticationService.Instance.UpdatePlayerNameAsync("Delirium");
+            //await AuthenticationService.Instance.UpdatePlayerNameAsync("Delirium");
 
             UpdatePlayerInfo();
             LoadFromCloud();
@@ -208,5 +207,13 @@ public class UGSManager : MonoBehaviour
     public void MoveToGachaScene()
     {
         SceneManager.LoadScene("GachaScene");
+    }    
+    public void MoveToDeckScene()
+    {
+        SceneManager.LoadScene("DeckScene");
+    }
+    public void MoveToBattleScene()
+    {
+        SceneManager.LoadScene("BattleScene");
     }
 }

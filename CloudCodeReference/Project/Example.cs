@@ -34,9 +34,21 @@ public class MyModule
         //logger.LogDebug(savedData);
         //return savedData;
 
-        GachaManager gachaManager=new GachaManager(logger,apiClient);
+        GachaManager gachaManager = new GachaManager(logger, apiClient);
         string result = await gachaManager.DoGacha(context);
         return result;
+    }
+    [CloudCodeFunction("RegisterDeck")]
+    public async Task RegisterDeck(IExecutionContext context, IGameApiClient gameApiClient)
+    {
+        BattleSimulator simulator = new BattleSimulator(logger, apiClient);
+        await simulator.RegisterPlayerDeck(context);
+    }
+    [CloudCodeFunction("Battle")]
+    public async Task Battle(IExecutionContext context, IGameApiClient gameApiClient, string opponentPlayer)
+    {
+        BattleSimulator simulator=new BattleSimulator(logger, apiClient);
+        await simulator.Battle(context, opponentPlayer);
     }
     public class ModuleConfig : ICloudCodeSetup //의존성 주입
     {

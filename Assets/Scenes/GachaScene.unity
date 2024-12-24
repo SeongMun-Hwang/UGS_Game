@@ -943,6 +943,15 @@ MonoBehaviour:
   gate: {fileID: 1527016520}
   characterParent: {fileID: 433541385}
   blockCanvas: {fileID: 1273796369}
+  prefabs:
+  - {fileID: 11400000, guid: 6170dba0900a0114794b3a2c6c80c9c6, type: 2}
+  - {fileID: 11400000, guid: aba15ee584a93714686b5e8eb9cc0b53, type: 2}
+  - {fileID: 11400000, guid: 12af1388dd526c84f81969fe552af138, type: 2}
+  - {fileID: 11400000, guid: 7515fa619ef22ca4cbcd2061f6761387, type: 2}
+  - {fileID: 11400000, guid: 33680851a7ffc4946ba96a6ed857ae49, type: 2}
+  - {fileID: 11400000, guid: 27620eb5db9d39b4189f68d71e0623dc, type: 2}
+  - {fileID: 11400000, guid: 809976a7f3f2b794183e978a6895351f, type: 2}
+  - {fileID: 11400000, guid: fe5df86940b4ada4b82046d1fbe46234, type: 2}
 --- !u!4 &1182050830
 Transform:
   m_ObjectHideFlags: 0
